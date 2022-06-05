@@ -18,3 +18,8 @@ mybatis-plus:
   configuration:
     #配置日志
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  # 实体类所对应的表都有固定的前缀
+  global-config:
+    db-config:
+      # 设置实体类所对应的表的统一前缀
+      table-prefix: t_
